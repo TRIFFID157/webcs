@@ -22,20 +22,22 @@ img{
     display: block;
 }
 
+
 .logoimg{
-    height: 50;
-    width: 50;
+    height: 200px;
+    width: 200px;
+    align-items: flex-start;
 }
 
-.lastpic{
-    align-items:center ;
-}
 .container{
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 1.2rem;
 }
 
+.Phgallery{
+    color: black;
+}
 /* header */
 header{
     min-height: 100vh;
@@ -51,6 +53,13 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: stretch;
+}
+    #contactpic{
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(http://media.bizj.us/view/img/8836532/istock000061502296medium*1200xx1698-955-0-88.jpg) center/cover no-repeat fixed;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
 }
 .navbar {
     background: rgba(0, 0, 0, 0.6);
@@ -119,26 +128,6 @@ header{
     display: flex;
     justify-content: space-between;
 }
-.search-input{
-    font-family: var(--Roboto);
-    font-size: 1.1rem;
-    width: 100%;
-    outline: 0;
-    padding: 0.6rem 0;
-    border: none;
-}
-.search-input::placeholder{
-    text-transform: capitalize;
-}
-.search-btn{
-    width: 40px;
-    font-size: 1.1rem;
-    color: var(--dark);
-    border: none;
-    background: transparent;
-    outline: 0;
-    cursor: pointer;
-}
 
 /* design */
 .design{
@@ -151,10 +140,12 @@ header{
 .title h2{
     font-family: var(--Playfair);
     font-size: 2.4rem;
+    color: white;
 }
 .title p{
     text-transform: uppercase;
     padding: 0.6rem 0;
+    color: white;
 }
 .design-content{
     margin: 2rem 0;
@@ -215,7 +206,7 @@ header{
 
 /* blog */
 .blog{
-    background-color:  rgb(150, 92, 81);
+    background-color: rgb(176, 132, 100);
     background-size: cover;
     padding: 4.5rem 0;
 }
@@ -237,6 +228,7 @@ header{
 .blog-text{
     margin: 2.2rem 0;
     padding: 0 1rem;
+    color: white;
 }
 .blog-text span{
     font-weight: 300;
@@ -259,7 +251,7 @@ header{
     font-family: var(--Roboto);
     font-size: 1.1rem;
     text-decoration: none;
-    color: var(--dark);
+    color: white;
     display: inline-block;
     background: var(--dark);
     color: #fff;
@@ -282,6 +274,21 @@ header{
     padding: 0.6rem 0;
     opacity: 0.8;
 }
+.explore-button {
+    padding: 10px 20px;
+    background-color:black;
+    border: 2px solid #ccc;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .explore-button:hover {
+    background-color: #e0e0e0;
+  }
+  
 
 /* footer */
 footer{
@@ -320,6 +327,105 @@ footer{
     font-family: var(--Playfair);
     letter-spacing: 2px;
 }
+
+/* Contact Us */
+.contact-us-section {
+    padding: 25px 100px;
+    text-align: center;
+  }
+  .container-contact {
+    display: flex;
+    column-gap: 50px;
+    display: inline-block;
+    text-align: left;
+  }
+  label {
+    font-family: var(--main-font);
+    font-size: 2rem;
+  }
+  input, textarea, button {
+    display: block;
+    margin: 15px 0;
+    font-size: 30px;
+  }
+  input {
+    height: 35px;
+    width: 40vw;
+  }
+  textarea {
+    height: 200px;
+    width: 40vw;
+  }
+  button[type="submit"] {
+    border: 2px solid black;
+    cursor: pointer;
+    background: transparent;
+    color: black;
+    display: inline-block;
+    padding: 15px 30px;
+    width: 40vw;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: ease-out 0.5s;
+    box-shadow: inset 0 0 0 0 black;
+  }
+  
+  button[type="submit"]:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 black;
+  }
+  
+  .map-section h1 {
+    font-family: var(--second-font);
+    font-size: 25px;
+  }
+  
+  .map-section a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .contact {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .info {
+    margin-right: 40px;
+  }
+  
+  .social-media {
+    margin-top: 20px;
+    text-align: center; /* Center the social media links */
+  }
+  
+  .contactlink1 {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 50px;
+    color: #333;
+  }
+  
+  .contactlink1:hover {
+    color: #007bff;
+  }
+  
+  /* Add Pinterest icon */
+  .fab.fa-pinterest {
+    color: #bd081c; /* Pinterest red */
+  }
+  
+
+
+
+
 
 /* Media Queries */
 @media screen and (min-width: 540px){
